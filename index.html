@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Objects</title>
+</head>
+<body>    
+    <div class="" style="text-align:center">
+        <h1>Lista studenti</h1>
+        <div id="students">
+
+        </div>
+        <button onclick="insertStudent()" style="text-align:center">Inserisci nuovo studente</button>
+    </div>
+    <script id="template" type="text/x-handllebars-template">
+        <ul class="body" style="text-align:left">
+            <li>{{nome}}</li>
+            <li>{{cognome}}</li>
+        </ul>
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
